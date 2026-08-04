@@ -5,7 +5,7 @@
 **Port:** 8086  
 
 🟥🟩 A lightweight, dependency-free Python dashboard for viewing Microsoft Intune
-🟦🟨 Enterprise App Catalog (EAM) packages and live production app deployments.
+Enterprise App 🟦🟨 Catalog (EAM) packages and live production app deployments.
 Runs entirely in your browser via a local HTTP server — no cloud, no database,
 no pip installs required.
 
