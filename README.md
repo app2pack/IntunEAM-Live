@@ -4,8 +4,8 @@
 **Version:** 1.0  
 **Port:** 8086  
 
-A lightweight, dependency-free Python dashboard for viewing Microsoft Intune
-Enterprise App Catalog (EAM) packages and live production app deployments.
+🟥🟩 A lightweight, dependency-free Python dashboard for viewing Microsoft Intune
+🟦🟨 Enterprise App Catalog (EAM) packages and live production app deployments.
 Runs entirely in your browser via a local HTTP server — no cloud, no database,
 no pip installs required.
 
@@ -256,6 +256,8 @@ Update Available, Update Eligible, Superseded status.
 ---
 
 ## Security Notes
+
+> **🔒 Note:** All data fetched from Microsoft Graph API is processed entirely on your local machine — it is stored in memory by the Python server, rendered in your browser, and never transmitted to any external service, third-party server, or analytics platform.
 
 - Credentials are **never stored** — entered at runtime via prompt or
   environment variables only.
