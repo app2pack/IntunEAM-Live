@@ -11,7 +11,7 @@ Runs entirely in your browser via a local HTTP server.
 **New in v2:** Two authentication methods — use an App Registration
 or sign in interactively with your own Microsoft account (no App Registration needed).
 
-![IntunEAM-Live](IntuneEAM.png)
+![IntunEAM Live Dashboard](https://raw.githubusercontent.com/app2pack/IntunEAM-Live/main/IntunEAM.png)
 
 ---
 
