@@ -1,4 +1,4 @@
-# IntunEAM Live — README
+# IntunEAM Live
 
 **Author:** Vigneshwaran  
 **Version:** 2.0  
