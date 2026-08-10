@@ -4,6 +4,7 @@
 **Version:** 1.0  
 **Port:** 8086  
 
+📦 Download from [here](
 A lightweight, dependency-free Python dashboard for viewing Microsoft Intune
 Enterprise App Catalog (EAM) packages and live production app deployments.
 Runs entirely in your browser via a local HTTP server.
