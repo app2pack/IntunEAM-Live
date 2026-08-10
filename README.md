@@ -1,14 +1,14 @@
 # IntunEAM Live
 
 **Author:** Vigneshwaran  
-**Version:** 2.0  
+**Version:** 1.0  
 **Port:** 8086  
 
 A lightweight, dependency-free Python dashboard for viewing Microsoft Intune
 Enterprise App Catalog (EAM) packages and live production app deployments.
 Runs entirely in your browser via a local HTTP server.
 
-**New in v2:** Two authentication methods — use an App Registration
+Two authentication methods — use an App Registration
 or sign in interactively with your own Microsoft account (no App Registration needed).
 
 ![IntunEAM Live Dashboard](https://raw.githubusercontent.com/app2pack/IntunEAM-Live/main/IntunEAM.png)
@@ -96,37 +96,37 @@ No App Registration or Client Secret required.
 
 ```bash
 # Option 1 — App Registration (prompted)
-python3 IntunEAM-Live-v2.py
+python3 IntunEAM-Live.py
 
 # Option 1 — App Registration (env vars, skips all prompts)
 TENANT_ID="your-tenant-id" \
 CLIENT_ID="your-client-id" \
 CLIENT_SECRET="your-secret" \
-python3 IntunEAM-Live-v2.py
+python3 IntunEAM-Live.py
 
 # Option 2 — Device Code (browser login)
-AUTH_METHOD=2 TENANT_ID="your-tenant-id" python3 IntunEAM-Live-v2.py
+AUTH_METHOD=2 TENANT_ID="your-tenant-id" python3 IntunEAM-Live.py
 
 # Option 2 — Device Code (any tenant)
-AUTH_METHOD=2 TENANT_ID="common" python3 IntunEAM-Live-v2.py
+AUTH_METHOD=2 TENANT_ID="common" python3 IntunEAM-Live.py
 ```
 
 ### Windows
 
 ```powershell
 # Option 1 — App Registration (py launcher, recommended)
-py -3 IntunEAM-Live-v2.py
+py -3 IntunEAM-Live.py
 
 # Option 1 — App Registration (env vars, PowerShell)
 $env:TENANT_ID="your-tenant-id"
 $env:CLIENT_ID="your-client-id"
 $env:CLIENT_SECRET="your-secret"
-py -3 IntunEAM-Live-v2.py
+py -3 IntunEAM-Live.py
 
 # Option 2 — Device Code
 $env:AUTH_METHOD="2"
 $env:TENANT_ID="your-tenant-id"
-py -3 IntunEAM-Live-v2.py
+py -3 IntunEAM-Live.py
 ```
 
 ---
@@ -331,7 +331,7 @@ Press `Ctrl+C` in the terminal window where the script is running.
 
 | Version | Changes |
 |---|---|
-| v2 | Added Device Code (browser login) as Option 2. Auto-detects env vars. |
+| v1 | Added Device Code (browser login) as Option 2. Auto-detects env vars. |
 | v1 | Initial release. App Registration only. |
 
 ---
