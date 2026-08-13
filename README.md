@@ -6,8 +6,8 @@
 
 📦 Download from [here](https://github.com/app2pack/IntunEAM-Live/releases/tag/v1.0)
 
-A lightweight, dependency-free Python dashboard for viewing Microsoft Intune
-Enterprise App Catalog (EAM) packages and live production app deployments.
+⚡️A lightweight Python dashboard for viewing available packages in the Microsoft Intune Enterprise App Catalog (EAM) in your tenant, and for tracking your live production EAM app deployments along with available updates for already-deployed EAM apps.
+
 Runs entirely in your browser via a local HTTP server.
 
 Two authentication methods — use an App Registration
