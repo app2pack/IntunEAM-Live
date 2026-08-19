@@ -181,10 +181,6 @@ py -3 IntunEAM-Live.py
 
   Tenant ID     : your-tenant-id
 
-  ┌─────────────────────────────────────────────────────┐
-  │  Open browser: https://microsoft.com/devicelogin   │
-  │  Enter code  : ABC123XYZ                           │
-  └─────────────────────────────────────────────────────┘
   Waiting for you to sign in...
   ✅ Login successful.
 ```
@@ -304,7 +300,6 @@ compared to what is deployed in Intune.
 - Credentials are **never stored** — entered at runtime or via env vars only
 - The server binds to **localhost only** — not accessible from other machines
 - Client Secret is entered via hidden input — not echoed to terminal
-- Device Code tokens are held in memory only — cleared when script stops
 - Only **read permissions** are used — no write access to your tenant
 - No third-party libraries, no CDN calls, no analytics
 
