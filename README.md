@@ -335,7 +335,7 @@ Press `Ctrl+C` in the terminal window where the script is running.
 | Version | Changes |
 |---|---|
 | v1 | Added Device Code (browser login) as Option 2. Auto-detects env vars. |
-| v1 | Initial release. App Registration only. |
+| v2 | Option 2 replaced Device Code with Browser Sign-In |
 
 ---
 
