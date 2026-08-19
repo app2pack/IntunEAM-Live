@@ -1,7 +1,7 @@
 # IntunEAM Live
 
 **Author:** Vigneshwaran  
-**Version:** 1.0  
+**Version:** 2.0  
 **Port:** 8086  
 
 📦 Download from [here](https://github.com/app2pack/IntunEAM-Live/releases/tag/v1.0)
@@ -37,6 +37,16 @@ python3 --version
 # Windows
 py --version
 ```
+## What changed in v2
+
+Option 1 is unchanged. Option 2 replaced Device Code with **Browser Sign-In (PKCE)**.
+
+| | v1 | v2 |
+|---|---|---|
+| Option 2 | Device Code — read a code, type it into a web page | Browser Sign-In — normal Microsoft login, nothing to type |
+| Dashboard tab | Opened after a fixed 1.5s, often mid-login | Opens only after sign-in completes |
+| Repeat sign-ins | Prompted up to 3 times per run | Signs in once; token cached |
+| Token expiry | Full re-authentication | Refreshed silently in background |
 
 ---
 
@@ -74,21 +84,12 @@ or shared team use. Requires a one-time setup in Microsoft Entra.
 
 ### Option 2 — Interactive Browser Login *(no App Registration needed)*
 
-Uses **Device Code Flow** — sign in with your own Microsoft / Entra account.
+Sign in with your own Microsoft / Entra account.
 No App Registration or Client Secret required.
 
 **What you need:**
 - Tenant ID only (or use `common` for any tenant)
 - Your Entra account must have **Intune Administrator** or **Global Reader** role
-
-**How it works:**
-1. Script displays a short code and opens `https://microsoft.com/devicelogin`
-2. Enter the code on that page and sign in with your Entra account
-3. Script automatically detects the login and continues
-
-> **Note:** Device Code uses your user account's delegated permissions.
-> Data access is scoped to what your account can see in Intune.
-> The token is stored in memory only and is valid for the session.
 
 ---
 
@@ -106,10 +107,10 @@ CLIENT_ID="your-client-id" \
 CLIENT_SECRET="your-secret" \
 python3 IntunEAM-Live.py
 
-# Option 2 — Device Code (browser login)
+# Option 2 — Interactive Browser Login
 AUTH_METHOD=2 TENANT_ID="your-tenant-id" python3 IntunEAM-Live.py
 
-# Option 2 — Device Code (any tenant)
+# Option 2 — Interactive Browser Login
 AUTH_METHOD=2 TENANT_ID="common" python3 IntunEAM-Live.py
 ```
 
@@ -125,7 +126,7 @@ $env:CLIENT_ID="your-client-id"
 $env:CLIENT_SECRET="your-secret"
 py -3 IntunEAM-Live.py
 
-# Option 2 — Device Code
+# Option 2 — Interactive Browser Login
 $env:AUTH_METHOD="2"
 $env:TENANT_ID="your-tenant-id"
 py -3 IntunEAM-Live.py
@@ -166,7 +167,7 @@ py -3 IntunEAM-Live.py
   Press Ctrl+C to stop.
 ```
 
-### Option 2 — Device Code
+### Option 2 - Interactive Browser Login
 
 ```
 ─────────────────────────────────────────────────
