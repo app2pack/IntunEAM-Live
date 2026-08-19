@@ -144,7 +144,7 @@ py -3 IntunEAM-Live.py
 ─────────────────────────────────────────────────
   Choose login method:
   [1] App Registration (Client ID + Secret) — recommended
-  [2] Interactive Browser Login (Device Code) — no App Reg needed
+  [2] Interactive Browser Login — no App Reg needed
 
   Enter 1 or 2 [default: 1]: 1
 
@@ -153,7 +153,7 @@ py -3 IntunEAM-Live.py
   Client Secret : (hidden)
 
 =================================================
-  IntunEAM Live v1
+  IntunEAM Live v2
   Tab 1: EAM Catalog Apps
   Tab 2: Live Apps
   Tab 3: App Updates
@@ -175,7 +175,7 @@ py -3 IntunEAM-Live.py
 ─────────────────────────────────────────────────
   Choose login method:
   [1] App Registration (Client ID + Secret) — recommended
-  [2] Interactive Browser Login (Device Code) — no App Reg needed
+  [2] Interactive Browser Login  — no App Reg needed
 
   Enter 1 or 2 [default: 1]: 2
 
