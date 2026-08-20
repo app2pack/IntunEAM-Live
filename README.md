@@ -4,7 +4,7 @@
 **Version:** 2.0  
 **Port:** 8086  
 
-📦 Download from [here](https://github.com/app2pack/IntunEAM-Live/releases/tag/v1.0)
+📦 Download from [here](https://github.com/app2pack/IntunEAM-Live/releases/tag/v2.0)
 
 ⚡️A lightweight Python dashboard for viewing available packages in the Microsoft Intune Enterprise App Catalog (EAM) in your tenant, and for tracking your live production EAM app deployments along with available updates for already-deployed EAM apps.
 
